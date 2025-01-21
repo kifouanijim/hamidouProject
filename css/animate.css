@@ -3620,4 +3620,18 @@
     -webkit-transition: none !important;
     transition: none !important;
   }
+  /* Général : rendre les images adaptables */
+.icon-box img {
+  width: 100%; /* Prend la largeur de son conteneur */
+  height: auto; /* Conserve le ratio d'aspect */
+  object-fit: cover; /* Assure un bon affichage dans le conteneur */
+  max-height: 200px; /* Fixe une hauteur uniforme si nécessaire */
 }
+
+/* Mise en page des colonnes sur les petits écrans */
+@media (max-width: 768px) {
+  .icon-box h5 {
+    font-size: 14px; /* Adaptez le texte pour les petits écrans */
+  }
+
+}}
