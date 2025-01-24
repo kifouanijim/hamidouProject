@@ -3627,6 +3627,23 @@
   object-fit: cover; /* Assure un bon affichage dans le conteneur */
   max-height: 200px; /* Fixe une hauteur uniforme si nécessaire */
 }
+@media (max-width: 991px) {
+  .about .section-content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about .icon-box {
+    margin-bottom: 20px;
+  }
+  .about-btn {
+    display: block;
+    margin: 20px auto;
+  }
+}
+
 
 /* Mise en page des colonnes sur les petits écrans */
 @media (max-width: 768px) {
