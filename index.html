@@ -194,43 +194,90 @@
 <!-------FAQ End------->
 
 <!-------Contact Start------->
-<section class="contact section-padding" data-scroll-index='6'>
+<section class="contact section-padding bg-light" data-scroll-index="6">
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="sectioner-header text-center">
-          <h3>Contact us</h3>
-          <span class="line"></span>
-          <p>  Numero whatsApp : 0033783943444 et 0033652339724
-            Snapchat : hamidousorysy1
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8 text-center mb-5">
+        <div class="section-header">
+          <h3 class="display-6 fw-bold">Contact</h3>
+          <span class="line bg-primary mx-auto mb-3 d-block"></span>
+          <p class="text-muted">
           </p>
         </div>
-        <div class="section-content">
-          <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-8">
-              <form id="contact_form" action="">
-                <div class="row">
-                  <div class="col">
-                    <input type="text" id="your_name" class="form-input w-100" name="full-name" placeholder="Full Name" required>
-                  </div>
-                  <div class="col">
-                    <input type="email" id="email" class="form-input w-100" name="email" placeholder="Email" required>
-                  </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="card shadow-sm border-0">
+          <div class="card-body p-4">
+            <h5 class="card-title mb-4 text-center fw-bold">Nous Contacter</h5>
+            <!-- Formulaire modifié pour utiliser Formspree -->
+            <form action="https://formspree.io/f/xpwqwdgb" method="POST">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    id="your_name"
+                    class="form-control rounded-pill"
+                    name="full-name"
+                    placeholder="Full Name"
+                    required
+                  />
                 </div>
-                <input type="text" id="subject" class="form-input w-100" name="subject" placeholder="Subject">
-                <textarea class="form-input w-100" id="message" placeholder="Message" name="message"></textarea>
-                <button class="btn-grad w-100 text-uppercase" type="submit" name="button">submit</button>
-              </form>
-            </div>
-            <div class="col-sm-12 col-md-12 col-lg-4">
-              <div class="contact-info white">
-                <div class="contact-item media"> <i class="fa fa-map-marker-alt media-left media-right-margin"></i>
-                </div>
-                <div class="contact-item media"> <i class="fa fa-mobile media-left media-right-margin"></i>
-                </div>
-                <div class="contact-item media"> <i class="fa fa-envelope media-left media-right-margin"></i>
+                <div class="col-md-6">
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control rounded-pill"
+                    name="email"
+                    placeholder="Email"
+                    required
+                  />
                 </div>
               </div>
+              <div class="mt-3">
+                <input
+                  type="text"
+                  id="subject"
+                  class="form-control rounded-pill"
+                  name="subject"
+                  placeholder="Subject"
+                />
+              </div>
+              <div class="mt-3">
+                <textarea
+                  class="form-control rounded"
+                  id="message"
+                  name="message"
+                  rows="6"
+                  placeholder="Message"
+                  required
+                ></textarea>
+              </div>
+              <div class="mt-4 text-center">
+                <button class="btn btn-primary rounded-pill px-5" type="submit">
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card shadow-sm border-0 h-100">
+          <div class="card-body p-4">
+            <h5 class="card-title mb-4 text-center fw-bold">Contact Info</h5>
+            <div class="contact-item mb-3">
+              <i class="fa fa-map-marker-alt text-primary me-3"></i>
+              <span>Paris,France</span>
+            </div>
+            <div class="contact-item mb-3">
+              <i class="fa fa-mobile text-primary me-3"></i>
+              <span>+33783943444 et +33652339724</span>
+            </div>
+            <div class="contact-item">
+              <i class="fa fa-envelope text-primary me-3"></i>
+              <span> Snapchat: hamidousorysy1</span>
             </div>
           </div>
         </div>
@@ -238,6 +285,8 @@
     </div>
   </div>
 </section>
+
+
 
 <!-------Contact End-------> 
 
